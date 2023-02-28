@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weird Color</title>
+</head>
+<body>
+    <div id="loader"></div>
+
+    <div id="cnMenu">
+        <div class="menu" id="menu">
+            <img src="./img/red-logo.svg" alt="logo" id="logo">
+            <div id="game_over"></div>
+            <div id="lose"></div>
+            <div id="score"></div>
+            <button id="btn">Restart</button>
+        </div>
+    </div>
+
+    <div id="game_con">
+        <img src="./img/red-logo.svg" alt="logo" id="logo">
+        <div id="time"></div>
+        <div id="scoreAll"></div>
+
+        <p>Choose the different shade! </p>
+
+        <div class="comp">
+            <div class="circle" id="circle1"></div>
+            <div class="circle" id="circle2"></div>
+            <div class="circle" id="circle3"></div>
+            <div></div>
+            <div class="circle" id="circle4"></div>
+            <div class="circle" id="circle5"></div>
+            <div class="circle" id="circle6"></div>
+            <div></div>
+            <div class="circle" id="circle7"></div>
+            <div class="circle" id="circle8"></div>
+            <div class="circle" id="circle9"></div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="form">
+            <img src="./img/red-logo.svg" alt="logo" id="logo">
+            <h3>Fill this data</h3>
+            <p>We want to know more about you</p>
+            <form>
+                <div class="form_control">
+                    <input type="text" required>
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="form_control">
+                    <input type="date" required>
+                    <label for="date">Birthdate</label>
+                </div>
+
+                <div class="form_control">
+                    <input type="text" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <button id="btn_form">Receive my gift</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Lato', serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #e2e2e5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+#scoreAll{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#score{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.circle{
+    height: 80px;
+    width: 80px;
+    background: #000;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#game_con{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo{
+    top: 5px;
+    left: 150px;
+    width: 100px;
+    height: 75px;
+    position: fixed;
+}
+
+#time{
+    height: 10px;
+    width: 100vw;
+    background-color: #fc0c04;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/image\ 5.png");
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cnMenu{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_over{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#lose{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#btn{
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: #e80c00;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#loader{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border-left: solid 5px #b50900;
+    border-right: solid 5px #e80c00;
+    border-bottom: solid 5px #e80c00;
+    border-top: solid 5px #e80c00;
+    animation: rotate .3s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+#logo{
+    top: 5px;
+    left: 150px;
+    width: 100px;
+    height: 75px;
+    position: fixed;
+}
+
+#time{
+    height: 10px;
+    width: 100vw;
+    background-color: #fc0c04;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/image\ 5.png");
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cnMenu{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_over{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#lose {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#form h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #e80c00;
+}
+
+#form p{
+    text-align: center;
+    margin-top: -35px;
+    font-size: 12px;
+}
+
+#btn_form{
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: #e80c00;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+
+.form_control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form_control input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #666666 solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #666666;
+}
+
+.form_control input:focus,
+.form_control input:valid{
+    outline: none;
+    border-bottom-color: #e80c00;
+}
+
+.form_control label{
+    position: absolute;
+    left: 0;
+}
