@@ -1,4 +1,6 @@
-let socket = io("http://localhost:5050", {path: '/real-time'});
+const NGROK = `${window.location.hostname}`;
+console.log('Server IP: ', NGROK);
+let socket = io(NGROK, { path: '/real-time' });
 
 function loader(){
     document.getElementById('loader').style.display ='none';
@@ -20,11 +22,9 @@ function start(){
     };
 
     function form() {
+        document.getElementById('ocult').style.display = 'none';
         document.getElementById('container').style.display = 'flex';
-        document.getElementById('cnMenu').style.display = 'none';
     }
-
-    console.log(form);
 
     var score = -10;
     var time = 2000;
@@ -37,6 +37,8 @@ function start(){
     function save(){
         let email = "Thanks for participating";
         socket.emit('datas', email)
+        document.getElementById('container').style.display = 'none';
+        document.getElementById('done').style.display = 'flex';
     };
 
     var circle1 = document.getElementById('circle1')
@@ -75,7 +77,7 @@ function start(){
         g = Math.floor(Math.random() * 235);
         b = Math.floor(Math.random() * 235);
         aleatorColor = "rgb" + "(" + r + ", " + g + ", " + b + ")";
-        weirdColor = "rgb" + "(" + (r + 20) + "," + (g + 20) + "," + (b + 20) + ")";
+        weirdColor = "rgb" + "(" + (r + 15) + "," + (g + 15) + "," + (b + 15) + ")";
         weirdCicle = ar[number];
         score += 2;
 
@@ -84,12 +86,15 @@ function start(){
         }
 
         if (score <= 0) {
-            document.getElementById('lose').innerHTML = "You didn't win...";          
+            document.getElementById('lose').innerHTML = "You didn't win...";
+            document.getElementById('button').style.display = "none";         
         }else {document.getElementById('lose').innerHTML = " ";}
 
         if (score > 0) {
             document.getElementById('game_over').innerHTML = "You won a discount!";
             document.getElementById('score').innerHTML = score + "%";
+            document.getElementById('button').style.display = "flex";
+            
         }else{
             document.getElementById('game_over').innerHTML = " ";
             document.getElementById('score').innerHTML = " ";
@@ -185,6 +190,6 @@ function start(){
         }
     }
 
-    setInterval(timer, 1);
+    setInterval(timer, 60);
 
-}
+};

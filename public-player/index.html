@@ -10,13 +10,22 @@
 <body>
     <div id="loader"></div>
 
-    <div id="cnMenu">
-        <div class="menu" id="menu">
-            <img src="./img/red-logo.svg" alt="logo" id="logo">
-            <div id="game_over"></div>
-            <div id="lose"></div>
-            <div id="score"></div>
-            <button id="btn">Restart</button>
+    <div id="done">
+        <img src="./img/red-logo.svg" alt="logo" id="logo">
+        <p>Thanks for participating</p>      
+    </div>
+
+    <div id="ocult">
+        <div id="cnMenu">
+            <div class="menu" id="menu">
+                <img src="./img/red-logo.svg" alt="logo" id="logo">
+                <div id="game_over"></div>
+                <div id="lose"></div>
+                <div id="score"></div>
+                <div id="button">
+                    <button id="btn">Continue</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -54,8 +63,8 @@
                 </div>
 
                 <div class="form_control">
-                    <input type="date" required>
-                    <label for="date">Birthdate</label>
+                    <input type="number" required>
+                    <label for="cel">Phone number</label>
                 </div>
 
                 <div class="form_control">
