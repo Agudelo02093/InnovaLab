@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    background-image: url("https://media.ray-ban.com/cms/resource/image/489694/landscape_ratio64x33/1292/667/3bc4637a70cc9335bd6b259ea90a7cb2/6DD2775A26BAEA29248A82B76057FE5C/rb-buca-bts-non-ecom-sun.jpg");
+}
+
+*{
+    font-family: Lato;
+}
+
+.beCool{
+    margin-top: 7%;
+}
+
+h2{
+    font-size: 5rem;
+    color: white;
+    font-weight: 900;
+    margin-left: 12%;
+    margin-bottom: -4rem;
+}
+
+h1{
+    font-size: 5rem;
+    color: red;
+    font-weight: 900;
+    margin-left: 6%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: 7%;
+    margin-top: -2%;
+}
+
+h5{
+    color: white;
+    font-weight: 500;
+    margin-left: 11%;
+    font-size: 1rem;
+}

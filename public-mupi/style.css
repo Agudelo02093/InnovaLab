@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: Lato;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    left: 150px;
+    width: 100px;
+    height: 75px;
+    margin-bottom: 10%;
+}
+
+.scoreContainer{
+    padding-top: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    color: red;
+    font-weight: 300;
+    margin-bottom: -2rem;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: -1rem;
+}
+
+.scoreDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: red;
+  }
