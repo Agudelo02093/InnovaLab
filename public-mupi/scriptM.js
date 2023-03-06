@@ -1,8 +1,7 @@
-const NGROK = `${window.location.hostname}`;
-//const NGROK = `https://${window.location.hostname}`;
-//let socket = io(`${window.location.hostname}:5050`, { path: '/real-time' }); 
-let socket = io(NGROK, { path: '/real-time' });
+// const NGROK = `https://${window.location.hostname}`;
+const NGROK = `${window.location.hostname}:5050`;
 console.log('Server IP: ', NGROK);
+let socket = io(NGROK, { path: '/real-time' });
 
 socket.on('display-score', msn => {
     console.log(msn);
@@ -21,4 +20,3 @@ socket.on('display-score', msn => {
 socket.on('display-datas', email => {
     console.log(email);
 })
-//Importar interfaz de Santi

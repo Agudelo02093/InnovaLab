@@ -1,6 +1,6 @@
 import { express, Server, cors, os } from './dependencies.js'
 const PORT = 5050;
-const IPaddress = '192.168.128.3';
+const IPaddress = '172.30.111.166';
 const SERVER_IP = IPaddress;
 
 const expressApp = express();

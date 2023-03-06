@@ -1,4 +1,5 @@
-const NGROK = `${window.location.hostname}`;
+// const NGROK = `https://${window.location.hostname}`;
+const NGROK = `${window.location.hostname}:5050`;
 console.log('Server IP: ', NGROK);
 let socket = io(NGROK, { path: '/real-time' });
 
@@ -190,6 +191,6 @@ function start(){
         }
     }
 
-    setInterval(timer, 60);
+    setInterval(timer, 30);
 
 };
